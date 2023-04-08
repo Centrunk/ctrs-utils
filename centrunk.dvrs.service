@@ -7,6 +7,8 @@ User=root
 Type=forking
 ExecStart=/opt/centrunk/dvm/dvmhost -c /opt/centrunk/dvm/configDVRS1.yml
 Restart=on-abnormal
+WorkingDirectory=/opt/centrunk/dvm
+TimeoutSec=infinity
 
 [Install]
 WantedBy=multi-user.target
