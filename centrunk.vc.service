@@ -5,7 +5,7 @@ After=syslog.target zerotier-one.service network.target
 [Service]
 User=root
 Type=forking
-ExecStart=/opt/centrunk/dvm/dvmhost -c /opt/centrunk/dvm/configVC1.yml
+ExecStart=/opt/centrunk/dvmhost -c /opt/centrunk/configs/configVC1.yml
 Restart=on-abnormal
 
 [Install]
